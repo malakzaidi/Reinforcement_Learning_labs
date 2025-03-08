@@ -1,5 +1,7 @@
 # 🚖 Taxi-v3 Reinforcement Learning Project 🚕
 
+![image_alt](https://github.com/malakzaidi/web-technologies-tps/blob/main/screenshots/Screenshot%202025-02-26%20021620.png)
+
 ## 📖 Overview
 
 This project implements a **Reinforcement Learning (RL)** agent to solve the **Taxi-v3** environment from Gymnasium, a popular library for RL experimentation. The goal is to train an agent to navigate a 5x5 grid, pick up a passenger from one of four locations (Red, Green, Yellow, Blue), and drop them off at a designated destination, all while avoiding obstacles and optimizing for maximum reward.
