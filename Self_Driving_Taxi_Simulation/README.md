@@ -1,4 +1,4 @@
-# 🚖 Self driving Taxi-v3 Reinforcement Learning Project with Open AI Gymn 🚕
+# 🚖 Self driving Taxi-v3 Reinforcement Learning Project with Open AI Gymnasium 🚕
 
 <h2 align="center">🚀 Technologies Used in This Project</h2>
 
