@@ -1,6 +1,6 @@
 # 🚖 Taxi-v3 Reinforcement Learning Project 🚕
 
-![image_alt](https://github.com/malakzaidi/web-technologies-tps/blob/main/screenshots/Screenshot%202025-02-26%20021620.png)
+![image_alt](https://github.com/malakzaidi/Reinforcement_Learning_projects/blob/main/Self_Driving_Taxi_Simulation/Screenshot%202025-03-05%20175426.png)
 
 ## 📖 Overview
 
