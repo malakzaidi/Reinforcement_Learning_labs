@@ -1,13 +1,52 @@
 # 🚖 Self driving Taxi-v3 Reinforcement Learning Project with Open AI Gymnasium 🚕
 
+Welcome to the **Taxi-v3 Reinforcement Learning Project**, a sophisticated and extensible framework designed to tackle the classic Taxi-v3 environment using **Open AI Gymnasium**, the modern evolution of the Open AI Gym library for reinforcement learning (RL) experimentation. This project provides researchers, developers, and enthusiasts with a comprehensive toolkit for training, visualizing, and comparing RL agents, emphasizing actionable insights through interactive visualizations and performance analysis across multiple environments. 
+
+![image_alt](https://github.com/malakzaidi/Reinforcement_Learning_projects/blob/main/Self_Driving_Taxi_Simulation/visualizations/Taxi%202025-03-08%2017-14-12.gif)
+
+## Table of Contents
+- [📋 Overview](#-overview)
+- [✨ Key Features](#-key-features)
+- [🧩 Project Architecture](#-project-architecture)
+- [🛠️ Installation](#️-installation)
+  - [Prerequisites](#prerequisites)
+  - [Installation Steps](#installation-steps)
+- [🚀 Getting Started](#-getting-started)
+  - [Basic Usage](#basic-usage)
+  - [Algorithm Comparison](#algorithm-comparison)
+  - [Customizing Hyperparameters](#customizing-hyperparameters)
+- [📖 About Open AI Gymnasium](#-about-open-ai-gymnasium)
+- [🔬 Algorithm Deep Dive](#-algorithm-deep-dive)
+  - [Q-Learning](#q-learning)
+  - [SARSA](#sarsa)
+  - [DQN (Deep Q-Network)](#dqn-deep-q-network)
+- [📊 Visualization Capabilities](#-visualization-capabilities)
+  - [Policy Visualization](#policy-visualization)
+  - [Performance Analytics](#performance-analytics)
+- [🔍 Example Results & Analysis](#-example-results--analysis)
+  - [Taxi-v3 Environment](#taxi-v3-environment)
+  - [Algorithm Comparison (500 Episodes)](#algorithm-comparison-500-episodes)
+  - [Learning Dynamics](#learning-dynamics)
+- [🧪 Experimental Results](#-experimental-results)
+- [📚 API Reference](#-api-reference)
+  - [RLAgent Class](#rlagent-class)
+- [🔧 Deployment](#-deployment)
+  - [Local Development](#local-development)
+  - [Containerization (Future)](#containerization-future)
+- [🔮 Future Development](#-future-development)
+- [📚 References](#-references)
+- [🙏 Acknowledgments](#-acknowledgments)
+- [🐛 Troubleshooting](#-troubleshooting)
+- [🤝 Contributing Guidelines](#-contributing-guidelines)
+- [📧 Contact](#-contact)
+
+
+
 <h2 align="center">🚀 Technologies Used in This Project</h2>
 
 <p align="center">
   <!-- Python -->
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" height="50" alt="Python"/>
-  
-  <!-- OpenAI Gymnasium (Alternative Logo) -->
-  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/eb/OpenAI_Logo.svg/120px-OpenAI_Logo.svg.png" height="50" alt="OpenAI Gymnasium"/>
 
   <!-- PyTorch -->
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pytorch/pytorch-original.svg" height="50" alt="PyTorch"/>
@@ -21,23 +60,14 @@
   <!-- Seaborn -->
   <img src="https://seaborn.pydata.org/_static/logo-wide-lightbg.svg" height="50" alt="Seaborn"/>
 
-  <!-- Plotly -->
-  <img src="https://upload.wikimedia.org/wikipedia/commons/3/37/Plotly-logo-01-square.png" height="50" alt="Plotly"/>
-
   <!-- tqdm -->
   <img src="https://img.icons8.com/fluency/48/progress-indicator.png" height="50" alt="tqdm"/>
-
-  <!-- License -->
-  <img src="https://img.icons8.com/color/48/000000/license.png" height="50" alt="License"/>
-
+  
   <!-- Build Status -->
   <img src="https://img.icons8.com/color/48/000000/checkmark.png" height="50" alt="Build Status"/>
 </p>
 
 
-
-
-Welcome to the **Taxi-v3 Reinforcement Learning Project**, a sophisticated and extensible framework designed to tackle the classic Taxi-v3 environment using **Open AI Gymnasium**, the modern evolution of the Open AI Gym library for reinforcement learning (RL) experimentation. This project provides researchers, developers, and enthusiasts with a comprehensive toolkit for training, visualizing, and comparing RL agents, emphasizing actionable insights through interactive visualizations and performance analysis across multiple environments.
 
 ---
 
@@ -63,7 +93,7 @@ The **Taxi-v3 Reinforcement Learning Project** leverages **Open AI Gymnasium** t
 
 ## 🧩 Project Architecture
 
-The framework is built around the `RLAgent` class, following a modular, object-oriented design:
+The peoject is built around the `RLAgent` class, following a modular, object-oriented design:
 
 ```
 RLAgent
@@ -252,9 +282,11 @@ In this visualization:
 - 📊 **Comparative Metrics**: Plots algorithm performance.
 - 🔄 **Convergence Analysis**: Assesses training stability.
 
+![image_alt](https://github.com/malakzaidi/Reinforcement_Learning_projects/blob/main/Self_Driving_Taxi_Simulation/visualizations/Screenshot%202025-03-08%20204137.png)
+
 **Algorithm Comparison: Rewards and Episode Length**
 
-![Algorithm Comparison](images/algorithm_comparison.png)
+![Algorithm Comparison](https://github.com/malakzaidi/Reinforcement_Learning_projects/blob/main/Self_Driving_Taxi_Simulation/visualizations/Screenshot%202025-03-08%20180752.png)
 
 This plot compares Q-Learning, SARSA, and DQN over 500 episodes:
 - **Left (Rewards)**: All algorithms show initial negative rewards due to exploration, with Q-Learning (blue) and SARSA (green) converging to around -66 to -68, while DQN (orange) achieves a higher average reward of -5.50.
@@ -263,7 +295,7 @@ This plot compares Q-Learning, SARSA, and DQN over 500 episodes:
 
 **Training Progress: Q-Learning Rewards**
 
-![Training Progress](images/training_progress.png)
+![Training Progress](https://github.com/malakzaidi/Reinforcement_Learning_projects/blob/main/Self_Driving_Taxi_Simulation/visualizations/Screenshot%202025-03-08%20121901.png)
 
 This plot shows the total reward per episode during Q-Learning training:
 - The reward starts highly negative (around -800) due to exploration and incorrect actions.
@@ -272,7 +304,7 @@ This plot shows the total reward per episode during Q-Learning training:
 
 **Performance Across Different Environments**
 
-![Performance Across Environments](images/performance_across_environments.png)
+![Performance Across Environments](https://github.com/malakzaidi/Reinforcement_Learning_projects/blob/main/Self_Driving_Taxi_Simulation/visualizations/Screenshot%202025-03-08%20191759.png)
 
 This bar chart compares average rewards across environments:
 - **Taxi-v3**: Achieves an average reward of ~7.28, indicating decent but suboptimal performance.
