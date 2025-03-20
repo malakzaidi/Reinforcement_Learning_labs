@@ -17,3 +17,11 @@ EPSILON_DECAY = 0.995
 BATCH_SIZE = 32
 MEMORY_SIZE = 2000
 EPISODES = 1000
+
+MOVES = {
+0: (-1, 0),
+1: (1, 0),
+2: (0, -1),
+3: (0, 1)
+}
+
